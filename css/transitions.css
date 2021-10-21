@@ -1,0 +1,319 @@
+html {
+    margin: 0;
+    background-color: lavenderblush;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*#region*/ /*header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-image: url(../assignments/images/pawel-czerwinski-ruJm3dBXCqw-unsplash.jpg);
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    height: 125px;
+    font-size: 20px;
+}
+
+#heading {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), lavenderblush);
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 0.25em;
+    text-align: center;
+}
+
+/*#endregion*/
+
+/*#region*/ /*main*/
+main {
+    scroll-behavior: smooth;
+}
+
+/*#region*/ /*transitions*/
+
+img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    clip-path: circle(50%);
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+#imgone,
+#imgtwo,
+#imgthree {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+#imgone:hover,
+#imgtwo:hover,
+#imgthree:hover {
+    opacity: 0.75;
+}
+
+h2 {
+    text-align: center;
+    transform: scale(1);
+}
+
+.one,
+.two,
+.three {
+    transition: 0.75s ease-in-out;
+}
+
+.one:hover,
+.two:hover,
+.three:hover {
+    transform: scale(1.1);
+    font-size: 110%;
+}
+
+/*#endregion*/
+
+/*#region*/ /*keyframes*/
+#imgone {
+    animation-name: imageone;
+    animation-duration: 1.5s;
+    transition-timing-function: ease-out;
+}
+
+#imgtwo {
+    animation-name: imagetwo;
+    animation-duration: 1.5s;
+    animation-delay: 0.25s;
+    animation-fill-mode: backwards;
+    transition-timing-function: ease-out;
+}
+
+#imgthree {
+    animation-name: imagethree;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    transition-timing-function: ease-out;
+}
+
+#headone {
+    animation-name: headingone;
+    animation-duration: 1.5s;
+    animation-fill-mode: backwards;
+    transition-timing-function: ease-out;
+}
+
+#headtwo {
+    animation-name: headingtwo;
+    animation-duration: 1.5s;
+    animation-delay: 0.25s;
+    animation-fill-mode: backwards;
+    transition-timing-function: ease-out;
+}
+
+#headthree {
+    animation-name: headingthree;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    transition-timing-function: ease-out;
+}
+
+@keyframes imageone {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes imagetwo {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes imagethree {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes headingone {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes headingtwo {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes headingthree {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*#endregion*/
+
+/*#region*/ /*mediaqueries*/
+
+@media screen and (min-width:600px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 33%;
+    }
+
+    .three {
+        margin-right: 0.6em;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    @keyframes imageone {
+        0% {
+            transform: translateX(-200%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes imagetwo {
+        0% {
+            transform: translateX(-250%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes imagethree {
+        0% {
+            transform: translateX(-350%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes headingone {
+        0% {
+            transform: translateX(300%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes headingtwo {
+        0% {
+            transform: translateX(200%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes headingthree {
+        0% {
+            transform: translateX(200%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    #imgone {
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+    }
+
+    #imgtwo {
+        animation-delay: 0.75s;
+        animation-fill-mode: backwards;
+    }
+
+    #imgthree {
+        animation-fill-mode: backwards;
+    }
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region*/ /*footer*/
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 1em;
+}
+
+@media screen and (min-width:600px) {
+    footer {
+        position: absolute;
+    }
+}
+
+/*#endregion*/

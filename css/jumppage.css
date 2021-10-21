@@ -1,16 +1,25 @@
-body { font-family: sans-serif;
-background-color: lavender;
+body {
+    font-family: sans-serif;
+    background-color: lavender;
+    margin: 0;
 }
+
 h1 {
     text-align: center;
 }
+
+/*#region*/ /*footer*/
 footer {
-    position: fixed;
-    left: 2%;
-    right: 2%;
-    bottom: 1%;
-    width: auto;
-    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
     text-align: center;
-    
+    font-size: 12px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
+
+/*#endregion*/
