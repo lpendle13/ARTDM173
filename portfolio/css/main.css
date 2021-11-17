@@ -1,0 +1,617 @@
+html {
+    margin: 0;
+    background-color: lavender;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*#region*//*header and navigation*/
+header {
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    background-image: url(/portfolio/images/IMG_3179.JPG);
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    margin-bottom: -1em;
+}
+
+nav>p>a:hover {
+    font-weight: bold;
+    font-size: 120%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#homenav {
+    grid-row: 1;
+    grid-column: 1;
+    background: linear-gradient(to top, rgba(229, 229, 250, 1) 0%, rgba(229, 229, 250, 0) 100%);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#galnav {
+    grid-row: 1;
+    grid-column: 2;
+    background: linear-gradient(to top, rgba(229, 229, 250, 1) 0%, rgba(229, 229, 250, 0) 100%);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#aboutnav {
+    grid-row: 1;
+    grid-column: 3;
+    background: linear-gradient(to top, rgba(229, 229, 250, 1) 0%, rgba(229, 229, 250, 0) 100%);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#contactnav {
+    grid-row: 1;
+    grid-column: 4;
+    background: linear-gradient(to top, rgba(229, 229, 250, 1) 0%, rgba(229, 229, 250, 0) 100%);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+
+/*#endregion*/
+
+/*#region*//*homepage and gallery*/
+
+/*#region*//*transitions*/
+
+img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    clip-path: circle(50%);
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+#imgone,
+#imgtwo,
+#imgthree,
+#imgfour {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+a {
+    text-align: center;
+    transform: scale(1);
+    color: black;
+    text-decoration: none;
+}
+
+.hone,
+.htwo,
+.hthree,
+.one,
+.two,
+.three,
+.four {
+    transition: 0.75s ease-in-out;
+}
+
+.hone:hover,
+.htwo:hover,
+.hthree:hover,
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover {
+    transform: scale(1.1);
+    font-size: 110%;
+
+}
+
+a:hover {
+    animation-name: headings;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    animation-duration: 0.5s;
+}
+
+@keyframes headings {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: darkslateblue;
+    }
+}
+
+/*#endregion*/
+
+/*#region*//*keyframes*/
+#imgone {
+    animation-name: imageone;
+    animation-duration: 1.5s;
+    transition-timing-function: ease-out;
+}
+
+#imgtwo {
+    animation-name: imagetwo;
+    animation-duration: 1.5s;
+    animation-delay: 0.25s;
+    animation-fill-mode: backwards;
+    transition-timing-function: ease-out;
+}
+
+#imgthree {
+    animation-name: imagethree;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    transition-timing-function: ease-out;
+}
+
+#imgfour {
+    animation-name: imagefour;
+    animation-duration: 1.5s;
+    animation-delay: 0.75s;
+    animation-fill-mode: backwards;
+    transition-timing-function: ease-out;
+}
+
+#headone {
+    animation-name: headingone;
+    animation-duration: 1.5s;
+    animation-fill-mode: backwards;
+    transition-timing-function: ease-out;
+}
+
+#headtwo {
+    animation-name: headingtwo;
+    animation-duration: 1.5s;
+    animation-delay: 0.25s;
+    animation-fill-mode: backwards;
+    transition-timing-function: ease-out;
+}
+
+#headthree {
+    animation-name: headingthree;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    transition-timing-function: ease-out;
+}
+
+#headfour {
+    animation-name: headingfour;
+    animation-duration: 1.5s;
+    animation-delay: 0.75s;
+    animation-fill-mode: backwards;
+    transition-timing-function: ease-out;
+}
+
+@keyframes imageone {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes imagetwo {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes imagethree {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes imagefour {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes headingone {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes headingtwo {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes headingthree {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes headingfour {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*#endregion*/
+
+/*#region*//*mediaqueries*/
+
+@media screen and (min-width:600px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hone,
+    .htwo,
+    .hthree {
+        width: 33%;
+        padding: 0;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four {
+        width: 25%;
+    }
+
+    @keyframes imageone {
+        0% {
+            transform: translateX(-200%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes imagetwo {
+        0% {
+            transform: translateX(-500%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes imagethree {
+        0% {
+            transform: translateX(-750%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes imagefour {
+        0% {
+            transform: translateX(-1000%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes headingone {
+        0% {
+            transform: translateX(1000%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes headingtwo {
+        0% {
+            transform: translateX(500%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes headingthree {
+        0% {
+            transform: translateX(300%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes headingfour {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    #imgone {
+        animation-delay: 1.5s;
+        animation-fill-mode: backwards;
+    }
+
+    #imgtwo {
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+    }
+
+    #imgthree {
+        animation-fill-mode: backwards;
+        animation-delay: 0.5s;
+    }
+
+    #imgfour {
+        animation-fill-mode: backwards;
+        animation-delay: 0s;
+    }
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region*//*contact*/
+h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: block;
+}
+
+p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: block;
+
+}
+
+div.contactform {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+input[type=text],
+input[type=email],
+textarea[name=comments] {
+    padding: 12px;
+    border: 1px solid darkslateblue;
+    background-color: #f8f7ff;
+    border-color: darkslateblue;
+    padding: .25em;
+    border-radius: 10px;
+    display: block;
+    margin: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 500px;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type=submit] {
+    background-color: darkslateblue;
+    color: white;
+    padding: 6px 10px;
+    border: 0.5px solid #2a2453;
+    border-bottom: 4px solid #2a2453;
+    border-right: 2px solid #2a2453;
+    border-radius: 10px;
+    display: block;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 91%;
+    max-width: 500px;
+}
+
+input[type=submit]:hover {
+    color: black;
+    background-color: #f8f7ff;
+}
+
+input[type=email]:hover {
+    background-color: white;
+}
+
+input[type=text]:hover {
+    background-color: white;
+}
+
+textarea[name=comments]:hover {
+    background-color: white;
+}
+
+.links>a>img {
+    clip-path: none;
+    width: 10%;
+    max-width: 100px;
+    margin-bottom: 0.25em;
+    margin-top: 1.5em;
+}
+
+.links {
+    margin-top: 2em;
+}
+
+.contactme {
+    width: 90%;
+}
+
+@media screen and (min-width:500px) {
+
+    .contact {
+        display: block;
+    }
+
+    .links {
+        display: flex;
+        max-width: 500px;
+        margin-top: 1em;
+    }
+
+    .links>a {
+        width: 100%;
+    }
+
+    .links>a>img {
+        width: 30%;
+    }
+
+}
+
+/*#endregion*/
+
+/*#region*//*about*/
+.aboutpage {
+    display: block;
+}
+
+#aboutpic {
+    width: 50%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#abouttext {
+    max-width: 90%;
+}
+
+@media screen and (min-width:600px) {
+    #aboutpic {
+        max-width: 400px;
+        max-height: 400px;
+        width: 30%;
+        object-fit: cover;
+        display: flex;
+        float: left;
+        shape-outside: circle(110% at 10% 0%);
+        margin: 1em;
+        margin-top: 0;
+    }
+}
+
+/*#endregion*/
+
+/*#region*//*projects*/
+#categorypage {
+    display: block;
+}
+
+h3 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.categoryproject {
+    clip-path: none;
+    width: 70%;
+    max-width: 90%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.info {
+    width: 90%;
+}
+
+.projectlink {
+    color: #2a2453;
+    transition: 0.75s ease-in-out;
+}
+
+.projectlink:hover {
+    font-size: 125%;
+}
+
+.linkpara {
+    padding-bottom: 2em;
+}
+
+/*#endregion*/
+
+/*#region*//*footer*/
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+/*#endregion*/
